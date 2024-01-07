@@ -11,3 +11,101 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* App.css */
+
+.above-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.above-section input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.above-section button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.above-section button + button {
+  margin-left: 10px;
+}
+
+.board-container {
+  display: flex;
+  margin-top: 50px;
+}
+
+.board-column {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.board-column h2 {
+  margin-bottom: 10px;
+}
+
+.board-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.board-column li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.board-column li.selected {
+  background-color: #e0f7fa;
+}
+
+.board-column button {
+  margin-top: 5px;
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: #2196f3;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.board-column button + button {
+  margin-left: 5px;
+}
+
+
+@media screen and (min-width:240px)and (max-width:600px){
+  body{
+    background-color: #4c7aaf;
+  }
+
+  .board-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+  }
+  
+}
